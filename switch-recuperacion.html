@@ -73,44 +73,21 @@
     color: rgba(255,255,255,0.7);
   }
   .sticky-label span { color: var(--white); }
-  .master-wrap {
+  .sticky-ig {
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
-  .master-label {
+    gap: 6px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.65);
     font-family: var(--cond);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
+    transition: color 0.15s;
   }
-  .master-time {
-    font-family: var(--cond);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 0.04em;
-    min-width: 52px;
-    text-align: right;
-  }
-  .master-time.running { color: var(--yellow); }
-  .btn-master {
-    font-family: var(--cond);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border: 1.5px solid rgba(255,255,255,0.35);
-    background: transparent;
-    color: var(--white);
-    padding: 5px 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  .btn-master:hover { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+  .sticky-ig:hover { color: var(--yellow); }
+  .sticky-ig svg { flex-shrink: 0; }
 
   /* ── HERO ───────────────────────────────────────── */
   .hero {
@@ -578,13 +555,16 @@
         <rect x="9" y="9" width="5" height="5" fill="#101010"/>
       </svg>
     </div>
-    <span class="sticky-label"><span>Demente</span> × Decathlon</span>
+    <a href="https://www.instagram.com/soydemente.mx/" target="_blank" rel="noopener" class="sticky-label" style="text-decoration:none;color:inherit;"><span>Demente</span> × Decathlon</a>
   </div>
-  <div class="master-wrap">
-    <span class="master-label">Sesión</span>
-    <span class="master-time" id="masterDisplay">00:00</span>
-    <button class="btn-master" id="masterBtn" onclick="toggleMaster()">Iniciar</button>
-  </div>
+  <a href="https://www.instagram.com/soydemente.mx/" target="_blank" rel="noopener" class="sticky-ig">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="0.01" fill="currentColor" stroke-width="3"/>
+    </svg>
+    @soydemente.mx
+  </a>
 </div>
 
 <!-- HERO -->
@@ -619,7 +599,7 @@
 <!-- SCIENCE STRIP -->
 <div class="science-strip">
   <span class="sci-badge">Ciencia</span>
-  <p>Estirar post-carrera <strong>no reduce el DOMS ni acelera la recuperación directamente</strong>. Lo que sí comprueba la evidencia: la flexibilidad funcional acumulada mejora la <strong>longitud de zancada</strong>, la conciencia corporal detecta desequilibrios antes de que se conviertan en lesión, y la <strong>transición parasimpática</strong> reduce el tiempo que tu sistema nervioso tarda en recuperarse.</p>
+  <p>Estirar post-carrera <strong>no reduce el DOMS, no acelera la recuperación directamente y tampoco previene lesiones</strong> — los estudios muestran que las lesiones ocurren por sobrecarga progresiva y mala mecánica, no por falta de flexibilidad pasiva. Lo que sí comprueba la evidencia: la flexibilidad funcional acumulada mejora la <strong>longitud de zancada</strong>, la conciencia corporal detecta desequilibrios antes de que escalen, la <strong>transición parasimpática</strong> reduce el tiempo que tu sistema nervioso tarda en recuperarse, y el estiramiento sostenido de forma consistente <strong>aumenta la movilidad articular</strong> — porque con la práctica constante el sistema nervioso aprende a permitir mayor rango de movimiento.</p>
 </div>
 
 <!-- MAIN -->
@@ -743,8 +723,8 @@
     <div class="ex-card-top">
       <div>
         <div class="ex-num-label">Ejercicio 04</div>
-        <div class="ex-title">Cuádriceps y flexores — zancada</div>
-        <div class="ex-muscle">Cuádriceps · Iliopsoas · Recto femoral</div>
+        <div class="ex-title">Cuádriceps lateral — en el suelo</div>
+        <div class="ex-muscle">Cuádriceps · Recto femoral · Flexor de cadera</div>
       </div>
       <div class="timer-wrap">
         <div class="timer-ring-wrap">
@@ -762,14 +742,14 @@
     </div>
     <div class="ex-body">
       <div class="opt-block main">
-        <div class="opt-label"><div class="opt-dot"></div> Con liga — versión profunda</div>
-        <p class="opt-text">Posición de hincado en el mat. Pasa la liga alrededor del pie trasero y sosténla con la mano del mismo lado para dar tracción adicional. Realiza una ligera retroversión pélvica (aprieta el glúteo) y empuja la cadera suavemente hacia adelante sin arquear la lumbar. <strong>45 seg por pierna.</strong></p>
+        <div class="opt-label"><div class="opt-dot"></div> Con liga</div>
+        <p class="opt-text">Recostado de lado en el mat, dobla la rodilla de arriba y pasa la liga alrededor del pie. Sosténla por encima del hombro con la mano y jala suavemente el pie hacia el glúteo — la liga te da tracción sin forzar el hombro. Mantén la cadera estable y sin rotar. <strong>45 seg por pierna.</strong></p>
       </div>
       <div class="opt-block alt">
         <div class="opt-label"><div class="opt-dot"></div> Sin material</div>
-        <p class="opt-text">Estocada clásica arrodillado. Manos en la rodilla delantera. Aprieta el glúteo de atrás y empuja la cadera al frente sin arquear la lumbar.</p>
+        <p class="opt-text">Recostado de lado, dobla la rodilla de arriba y jala el pie hacia el glúteo con la mano directamente. Si necesitas apoyo, recuesta la cabeza sobre el brazo extendido de abajo.</p>
       </div>
-      <div class="sci-tip"><strong>¿Por qué?</strong> El iliopsoas es el flexor de cadera principal en la carrera. Cuando está acortado — muy común por trabajo en escritorio — limita la extensión de cadera y sobrecarga la zona lumbar.</div>
+      <div class="sci-tip"><strong>¿Por qué?</strong> El cuádricep es el motor principal de la fase de impacto en la carrera — cada zancada lo contrae excéntricamente. Estirarlo en el suelo permite relajarlo completamente sin necesitar equilibrio, lo que profundiza el estiramiento respecto a la versión de pie.</div>
     </div>
   </div>
 
@@ -875,6 +855,14 @@
     </div>
     <span class="footer-text"><span>Equipo Demente</span> × Decathlon · El switch de la recuperación</span>
   </div>
+  <a href="https://www.instagram.com/soydemente.mx/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:7px;text-decoration:none;color:rgba(255,255,255,0.5);font-family:var(--cond);font-size:12px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;transition:color 0.15s;" onmouseover="this.style.color='#FFCD4D'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="0.01" fill="currentColor" stroke-width="3"/>
+    </svg>
+    @soydemente.mx
+  </a>
 </footer>
 
 <script>
@@ -944,25 +932,6 @@
     const d = document.getElementById('disp'+id);
     d.classList.remove('running','done');
     document.getElementById('ring'+id).classList.remove('done');
-  }
-
-  let masterOn = false, masterSec = 0, masterIv = null;
-  function toggleMaster() {
-    const btn = document.getElementById('masterBtn');
-    const disp = document.getElementById('masterDisplay');
-    if (masterOn) {
-      clearInterval(masterIv); masterOn = false;
-      btn.textContent = 'Continuar';
-      disp.classList.remove('running');
-    } else {
-      masterOn = true; btn.textContent = 'Pausar';
-      disp.classList.add('running');
-      masterIv = setInterval(() => {
-        masterSec++;
-        const m = Math.floor(masterSec/60), s = masterSec%60;
-        disp.textContent = String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
-      }, 1000);
-    }
   }
 
   function beep() {
